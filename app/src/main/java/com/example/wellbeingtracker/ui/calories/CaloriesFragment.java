@@ -16,6 +16,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.wellbeingtracker.Model.Calories;
 import com.example.wellbeingtracker.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CaloriesFragment extends Fragment {
@@ -55,13 +56,18 @@ public class CaloriesFragment extends Fragment {
             }
         });
 
+
+
         caloriesViewModel.getAllCalories().observe(this, new Observer<List<Calories>>() {
             @Override
             public void onChanged(List<Calories> calories) {
+                int total = 0;
                 if (!calories.isEmpty()) {
                     textView.setText("");
                     for (Calories c : calories) {
                         textView.append(c.getAmount() + "\n");
+                        total += c.getAmount();
+                        totalCalories.setText(Integer.toString(total));
                     }
                 } else {
                     textView.setText("No calories inserted");
@@ -70,5 +76,6 @@ public class CaloriesFragment extends Fragment {
         });
         return root;
     }
+
 
 }
