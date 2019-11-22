@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "243954284721",
+    "firebase_url": "https://wellbeingtracker-68a00.firebaseio.com",
+    "project_id": "wellbeingtracker-68a00",
+    "storage_bucket": "wellbeingtracker-68a00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243954284721:android:afe9dba61c343a95cf0a90",
+        "android_client_info": {
+          "package_name": "com.example.wellbeingtracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243954284721-566hphnsep2h96hu7tct7aesq7qh1a46.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wellbeingtracker",
+            "certificate_hash": "27a8a4faf4acb334d707f887296b3af980c5f819"
+          }
+        },
+        {
+          "client_id": "243954284721-59laa7uls130etfsd2stomqsnl6tmpsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbZKfcsNa148q6p6zzToOFb5ctdeCMnuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243954284721-59laa7uls130etfsd2stomqsnl6tmpsg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

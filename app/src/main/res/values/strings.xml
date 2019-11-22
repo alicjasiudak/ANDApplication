@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WellbeingTracker</string>
+    <string name="log_in">Log in</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_water">Water</string>
+    <string name="title_calories">Calories</string>
+    <string name="title_exercises">Exercises</string>
+    <string name="create_account_text">If you don\'t have an account yet, click here to create one</string>
+    <string name="create_account">Create Account</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="title_activity_create_account">CreateAccountActivity</string>
+    <string name="already_registered_sign_in_by_clicking_below">Already registered? Click here to sign in.</string>
+    <string name="sign_in">Sign in</string>
+    <string name="yoga_fragment_header">Drink up!</string>
+    <string name="sign_out">Sign out</string>
+    <string name="insert_amount_of_calories">Insert amount of calories:</string>
+    <string name="add">Add</string>
+    <string name="another_advice">Another advice 👾</string>
+    <string name="click_below_for_a_piece_of_advice">Click below for a piece of advice</string>
+    <string name="yoga">Yoga</string>
+    <string name="advice">Advice</string>
+</resources>

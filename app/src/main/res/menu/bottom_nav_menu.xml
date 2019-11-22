@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_yoga"
+        android:icon="@drawable/ic_yoga_black_24dp"
+        android:title="@string/yoga" />
+
+    <item
+        android:id="@+id/navigation_calories"
+        android:icon="@drawable/ic_add_calories_24dp"
+        android:title="@string/title_calories" />
+
+    <item
+        android:id="@+id/navigation_exercises"
+        android:icon="@drawable/ic_advice_black_24dp"
+        android:title="@string/advice" />
+
+</menu>
