@@ -44,6 +44,7 @@ public class CaloriesFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 caloriesViewModel.deleteAllCalories();
+                totalCalories.setText("");
             }
         });
 
