@@ -1,5 +1,6 @@
 package com.example.wellbeingtracker.ui;
 
+import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,13 +8,18 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Button;
 
+import com.example.wellbeingtracker.Model.Advice;
 import com.example.wellbeingtracker.R;
+import com.example.wellbeingtracker.RoomDatabase.WellBeingTrackerRepository;
 import com.example.wellbeingtracker.ui.advice.AdviceViewModel;
+import com.example.wellbeingtracker.ui.calories.CaloriesViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -24,6 +30,7 @@ public class HomeActivity extends AppCompatActivity {
     private FirebaseAuth mFirebaseAuth;
     private Button updateAdvice;
     private AdviceViewModel adviceViewModel;
+    private String shareThought;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +49,15 @@ public class HomeActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
+
+        adviceViewModel = ViewModelProviders.of(this).get(AdviceViewModel.class);
+        adviceViewModel.getAdvice().observe(this, new Observer<Advice>() {
+            @Override
+            public void onChanged(Advice advice) {
+                shareThought = advice.getAdvice();
+            }
+        });
+
     }
 
     @Override
@@ -61,7 +77,7 @@ public class HomeActivity extends AppCompatActivity {
     public void share(MenuItem item) {
         Intent i = new Intent(Intent.ACTION_SEND);
         i.setType("text/plain");
-        String shareBody = "body";
+        String shareBody = shareThought;
         String shareSub = "subject";
         i.putExtra(Intent.EXTRA_SUBJECT, shareSub);
         i.putExtra(Intent.EXTRA_TEXT, shareBody);
