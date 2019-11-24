@@ -20,4 +20,12 @@
     <string name="click_below_for_a_piece_of_advice">Click below for a piece of advice</string>
     <string name="yoga">Yoga</string>
     <string name="advice">Advice</string>
+    <string name="your_profile">Your profile</string>
+    <string name="username">Username:</string>
+    <string name="welcome">Welcome!</string>
+    <string name="loggedInas">You are logged in as</string>
+    <string name="home">Home</string>
+    <string name="share">Share</string>
+    <string name="total_calories">Total calories:</string>
+    <string name="delete_all">Delete all</string>
 </resources>

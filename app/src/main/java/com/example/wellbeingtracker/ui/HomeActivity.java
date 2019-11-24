@@ -2,6 +2,7 @@ package com.example.wellbeingtracker.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -59,4 +60,13 @@ public class HomeActivity extends AppCompatActivity {
 
         }
 
+    public void share(MenuItem item) {
+        Intent i = new Intent(Intent.ACTION_SEND);
+        i.setType("text/plain");
+        String shareBody = "body";
+        String shareSub = "subject";
+        i.putExtra(Intent.EXTRA_SUBJECT, shareSub);
+        i.putExtra(Intent.EXTRA_TEXT, shareBody);
+        startActivity(Intent.createChooser(i, "Share via"));
+    }
 }

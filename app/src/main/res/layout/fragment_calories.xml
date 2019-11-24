@@ -21,6 +21,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
             android:ems="10" />
 
 
@@ -34,6 +38,7 @@
             />
 
         <TextView
+            android:layout_margin="20dp"
             android:id="@+id/caloriesInsertedTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,7 +48,7 @@
             android:scrollHorizontally="false" />
     <TextView
         android:layout_above="@+id/delete_all"
-        android:text="Total calories:"
+        android:text="@string/total_calories"
         android:layout_marginRight="20dp"
 
         android:layout_toLeftOf="@+id/totalCalories"
@@ -65,6 +70,6 @@
         android:id="@+id/delete_all"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Delete all" />
+        android:text="@string/delete_all" />
 
 </RelativeLayout>

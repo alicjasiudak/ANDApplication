@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -53,10 +56,20 @@ public class AdviceFragment extends Fragment {
         });
 
 
+
         final TextView textView = root.findViewById(R.id.text_advice);
 
-
+        setHasOptionsMenu(true);
         return root;
     }
+
+    //Add extra button to toolbar
+    @Override
+    public void onCreateOptionsMenu(
+            Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.share, menu);
+    }
+
+
 
 }
