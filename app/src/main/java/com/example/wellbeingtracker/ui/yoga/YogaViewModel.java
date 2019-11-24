@@ -10,7 +10,7 @@ public class YogaViewModel extends ViewModel {
 
     public YogaViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Get some yoga poses inspo");
+        mText.setValue("Get free of all stress and negativity through yoga.");
     }
 
     public LiveData<String> getText() {

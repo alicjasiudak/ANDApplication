@@ -1,4 +1,4 @@
-package com.example.wellbeingtracker;
+package com.example.wellbeingtracker.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.wellbeingtracker.ui.HomeActivity;
+import com.example.wellbeingtracker.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -72,7 +72,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         tvSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(CreateAccountActivity.this,LoginActivity.class);
+                Intent i = new Intent(CreateAccountActivity.this, LoginActivity.class);
                 startActivity(i);
             }
         });

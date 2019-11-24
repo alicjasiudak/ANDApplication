@@ -12,7 +12,7 @@
     <string name="title_activity_create_account">CreateAccountActivity</string>
     <string name="already_registered_sign_in_by_clicking_below">Already registered? Click here to sign in.</string>
     <string name="sign_in">Sign in</string>
-    <string name="yoga_fragment_header">Drink up!</string>
+    <string name="yoga_fragment_header">Daily yoga inspo!</string>
     <string name="sign_out">Sign out</string>
     <string name="insert_amount_of_calories">Insert amount of calories:</string>
     <string name="add">Add</string>

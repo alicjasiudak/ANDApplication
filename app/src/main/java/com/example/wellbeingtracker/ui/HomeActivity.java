@@ -2,13 +2,11 @@ package com.example.wellbeingtracker.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Button;
 
-import com.example.wellbeingtracker.LoginActivity;
 import com.example.wellbeingtracker.R;
 import com.example.wellbeingtracker.ui.advice.AdviceViewModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
